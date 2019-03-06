@@ -23,12 +23,13 @@ lambda_sq_G_save: q*(q-1)/2*nmc matrix of saved posterior samples of lambda squa
 tau_sq_G_save: 1*nmc matrix of saved posterior samples of tau squared (global tuning parameter), for precision matrix
 
 # Details
-Draw posterior samples to estimate the coefficients and the precision matrix in multivariate Gaussian regressions. Posterior means of the samples is the HS-GHS estimate by Li et. al. (2017).
-The function is a full Gibbs sampler. It uses fast sampling method by Bhattacharya et. al. (2016) to sample coefficients, and the graphical horseshoe algorithm by Li et. al. (2017) to sample the precision matrix.
+Draw posterior samples to estimate the coefficients and the precision matrix in multivariate Gaussian regressions. Posterior mean of the samples is the HS-GHS estimate.
+The function is a full Gibbs sampler. Within a Gibbs step, the algorithm uses fast sampling method by Bhattacharya et. al. (2016) to sample coefficients, and the graphical horseshoe algorithm by Li et. al. (2017) to sample the precision matrix.
 
 # References
-Bhattacharya, Anirban, Antik Chakraborty, and Bani K. Mallick. "Fast sampling with Gaussian scale mixture priors in high-dimensional regression." Biometrika (2016): asw042.
-Li, Yunfan, Bruce A. Craig, and Anindya Bhadra. "The Graphical Horseshoe Estimator for Inverse Covariance Matrices." arXiv preprint arXiv:1707.06661 (2017).
+Bhattacharya, Anirban, Antik Chakraborty, and Bani K. Mallick (2016). "Fast sampling with Gaussian scale mixture priors in high-dimensional regression." Biometrika 103, 985-991.
+
+Li, Yunfan, Bruce A. Craig, and Anindya Bhadra (2019). "The Graphical Horseshoe Estimator for Inverse Covariance Matrices." Journal of Computational and Graphial Statistics to appear.
 
 # Examples
 See HSGHS_example.m
