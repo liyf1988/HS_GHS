@@ -1,7 +1,7 @@
 HS-GHS Version 1.0 03/03/2019
 
 # Description
-Draw Monte Carlo samples from the posterior distribution under the graphical horseshoe prior, to estimate the coefficients and the precision matrix in multivariate Gaussian regressions.
+Draw Monte Carlo samples from the posterior distribution under HS-GHS, to estimate the coefficients and the precision matrix in multivariate Gaussian regressions.
 
 # Usage
 [beta_save,lambda_sq_save,tau_sq_save,omega_save,lambda_G_sq_save,tau_G_sq_save] = HSGHS(X,Y,1000,5000,eye(q))
